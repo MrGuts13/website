@@ -39,8 +39,8 @@ export const Skills: React.FC = () => {
                 </div>
 
                 <div 
-                  className={`overflow-hidden transition-all duration-300 ${
-                    activeCategory === categoryId ? 'max-h-96' : 'max-h-0'
+                  className={`transition-all duration-300 ${
+                    activeCategory === categoryId ? 'max-h-[40rem] overflow-y-auto' : 'max-h-0 overflow-hidden'
                   }`}
                 >
                   <div className="p-6 pt-0 border-t border-slate-100">

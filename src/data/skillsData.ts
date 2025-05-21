@@ -9,7 +9,7 @@ export const skillsData: Record<string, SkillCategory> = {
   programming: {
     title: "Programming & Data Science",
     icon: "💻",
-    description: "Languages and tools for data analysis and manipulation",
+    description: "Languages, data science, and analytics tools",
     skills: [
       "Python",
       "R",
@@ -27,9 +27,9 @@ export const skillsData: Record<string, SkillCategory> = {
     ]
   },
   machinelearning: {
-    title: "Machine Learning & AI",
+    title: "Machine Learning, AI & Automation",
     icon: "🧠",
-    description: "AI techniques and algorithms",
+    description: "ML, AI, LLMs, and workflow automation",
     skills: [
       "LLM Prompt Engineering",
       "Neural Networks",
@@ -37,43 +37,50 @@ export const skillsData: Record<string, SkillCategory> = {
       "SVM",
       "Bayesian Optimization",
       "Feature Selection",
-      "Supervised/Unsupervised Learning",
+      "Supervised Learning",
+      "Unsupervised Learning",
       "PCA",
-      "Agentic Workflows",
-      "Document/Lead Classification"
+      "RAG Pipelines (LangChain, FAISS, Ollama)",
+      "Agentic Workflows (n8n)",
+      "Conversational UIs",
+      "Document Parsing & Comparison",
+      "Lead Classification Automation"
     ]
   },
   dataengineering: {
     title: "Software & Data Engineering",
     icon: "🔧",
-    description: "Building and deploying data systems",
+    description: "Backend, data infrastructure, and automation",
     skills: [
       "FastAPI",
       "SQLAlchemy",
+      "PostgreSQL",
       "SQLite",
       "ETL Scheduling",
       "Data Validation",
       "Webhooks",
-      "API Integration",
+      "REST APIs",
       "CLI Tools",
       "Secure Credential Vaulting",
-      "Google Cloud Platform",
+      "Prefect",
+      "Celery",
+      "Google Cloud Platform (GCS, Dataproc)",
       "PySpark",
       "Hadoop",
-      "Distributed Computing",
       "TFRecord Optimization",
+      "Distributed Computing",
       "Parallel Data Processing"
     ]
   },
   uiux: {
     title: "UI/UX & Visualization",
     icon: "🎨",
-    description: "Creating interfaces and visualizing data",
+    description: "Frontend, dashboards, and data visualization",
     skills: [
       "Streamlit (advanced)",
-      "React (basic)",
+      "React (intermediate)",
       "TailwindCSS (basic)",
-      "Custom JS Enhancements",
+      "Custom JavaScript Enhancements",
       "UI State Management",
       "Dashboard Design",
       "Tableau",
@@ -86,9 +93,9 @@ export const skillsData: Record<string, SkillCategory> = {
     ]
   },
   cybersecurity: {
-    title: "Cybersecurity & DevOps",
+    title: "Cybersecurity, DevOps & Compliance",
     icon: "🔒",
-    description: "Protecting systems and deployment",
+    description: "Security, compliance, and deployment",
     skills: [
       "IEC 62443",
       "OT Cybersecurity",
@@ -99,8 +106,11 @@ export const skillsData: Record<string, SkillCategory> = {
       "Docker",
       "WSL2",
       "Git",
-      "Environment Management",
-      "Secure Deployment"
+      "Environment Management (.env, appsettings.local.json)",
+      "Secure API Deployment",
+      "Azure DevOps",
+      "AWS (S3, Secrets Manager, ECR)",
+      "Zscaler Certificates"
     ]
   }
 };

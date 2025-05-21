@@ -22,17 +22,13 @@ export const About: React.FC = () => {
             
             <div className="space-y-4 text-lg text-slate-700">
               <p>
-                I've built a career bridging finance, data science, and cybersecurity with a focus on creating intelligent, secure systems. My journey has given me unique perspectives that help me solve complex problems at the intersection of multiple domains.
+               I am a dynamic Technology Consultant with a unique cross-functional expertise spanning AI/ML Engineering, Software Development, Data Systems, and Cybersecurity, underpinned by a strong foundation in finance. At EY, I engineer and stabilize complex Generative AI platforms for national clients, navigating distributed microservices architectures and independently resolving critical infrastructure challenges (Docker, PostgreSQL, SAML/JWT authentication). I develop responsive frontend solutions (React, Streamlit) and implement advanced NLP capabilities for automated reporting, document summarization, intelligent querying, and knowledge base management.
               </p>
               
               <p>
-                As a technology consultant at EY, I develop AI-powered financial interfaces, lead frontend design integrating with multi-agent backend systems, and conduct OT cybersecurity audits for critical infrastructure while validating e-KYC solutions for financial institutions.
+               Beyond client work, I design and build end-to-end AI workflow platforms and data pipelines (FastAPI, Prefect, PostgreSQL, n8n), showcasing expertise in RAG architectures, LLM integration, and workflow automation. My experience also includes conducting OT cybersecurity audits for critical infrastructure and validating e-KYC compliance for financial institutions, ensuring robust, secure, and scalable solutions. My background in finance provides a distinct advantage in translating complex technical solutions into strategic business value.
               </p>
-              
-              <p>
-                I'm skilled in developing end-to-end data pipelines, orchestrated workflows, and building interfaces that make complex data accessible. My background in both finance and technology makes me effective at translating between technical and business domains.
-              </p>
-              
+         
               <p>
                 I hold an MSc in Data Science from City, University of London and a Bachelor of Commerce from the University of Melbourne, with industry certifications in cybersecurity from ISC2 and Microsoft.
               </p>

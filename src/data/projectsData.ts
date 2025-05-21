@@ -10,22 +10,46 @@ export interface ProjectItem {
 
 export const projectsData: ProjectItem[] = [
   {
+    title: "Mini IDP - AI Workflow Platform",
+    icon: "🤖",
+    shortDescription: "Full-stack AI workflow platform for self-serve document processing with RAG chatbots and summarizers.",
+    fullDescription: "Designed and engineered a full-stack AI Workflow Platform (Mini IDP) enabling self-serve document processing through RAG chatbots, summarizers, and text classifiers. Implemented a modular microservices-inspired architecture with a FastAPI backend, React frontend, and Prefect for robust workflow orchestration. Developed comprehensive AI/ML pipelines leveraging Natural Language Processing (NLP) for intelligent query answering with citations, automated document summarization, and text classification, demonstrating end-to-end LLM integration and data flow management. Established scalable data infrastructure, including PostgreSQL database schema design for document and pipeline metadata, robust input validation, and structured error handling, ensuring platform reliability and maintainability.",
+    technologies: ["FastAPI", "React", "Prefect", "PostgreSQL", "NLP", "LLM", "RAG", "Microservices", "Docker"],
+    keyFeatures: [
+      "Self-serve document processing via RAG chatbots and summarizers",
+      "Modular microservices-inspired architecture",
+      "Comprehensive AI/ML pipelines for query answering, summarization, and classification",
+      "Robust workflow orchestration with Prefect",
+      "Scalable PostgreSQL data infrastructure with validation and error handling"
+    ],
+    outcome: "Enabled end-to-end document automation and intelligent analytics for enterprise users."
+  },
+  {
     title: "Intelligent B2B Lead Generation Platform",
     icon: "🚀",
-    shortDescription: "End-to-end AI-powered B2B lead generation system with automated workflows and personalized outreach.",
-    fullDescription: "Designed and deployed a comprehensive AI-powered B2B lead generation platform that automates the entire process from data collection to personalized outreach. The system includes sophisticated scraping mechanisms, data validation pipelines, and intelligent enrichment processes, all secured with proper credential management. The backend uses FastAPI and SQLite for persistence, while the workflow automation is handled by n8n for orchestrating complex processes.",
-    technologies: [
-      "Python", "FastAPI", "SQLite", "SQLAlchemy", "n8n", "LLM Prompt Engineering", 
-      "Data Pipelines", "ETL", "Workflow Automation", "Secure Credential Vaulting"
-    ],
+    shortDescription: "Fully orchestrated workflow automation engine for B2B lead ingestion, LLM-powered email generation, and campaign tracking.",
+    fullDescription: "Built a fully orchestrated workflow automation engine using n8n for lead ingestion, personalized email generation via LLM prompts, PDF proposal attachments, and campaign tracking, built for B2B marketers to automate cold outreach using personalized LLM-generated emails and campaign tracking, enabling consistent lead flow without manual effort.",
+    technologies: ["n8n", "LLM", "Workflow Automation", "PDF Generation", "Campaign Tracking"],
     keyFeatures: [
-      "End-to-end data pipeline for lead acquisition, validation, enrichment, and storage",
-      "Fully orchestrated workflow automation engine using n8n",
-      "LLM-powered personalized email generation based on lead characteristics",
-      "Automated PDF proposal generation and campaign tracking",
-      "Secure credential management and configuration system"
+      "Automated lead ingestion and enrichment",
+      "Personalized LLM-powered email generation",
+      "PDF proposal attachments",
+      "Campaign tracking and analytics"
     ],
-    outcome: "Created a scalable, automated system that drastically reduced manual effort in lead generation while improving lead quality and personalization of outreach, laying groundwork for future ML-driven scoring and analytics features."
+    outcome: "Automated and personalized B2B lead generation, reducing manual effort and increasing lead flow."
+  },
+  {
+    title: "RAG-Powered Knowledge Chatbot",
+    icon: "💬",
+    shortDescription: "Local RAG chatbot for semantic Q&A across multiple PDFs using LangChain, FAISS, FastAPI, and Ollama.",
+    fullDescription: "Built a fullstack local RAG chatbot using LangChain, FAISS, FastAPI, and Ollama, enabling semantic question-answering across multiple uploaded PDFs. Engineered dynamic context filtering with vector index rebuilding and cross-encoder re-ranking, solving ghost context issues and boosting LLM answer precision.",
+    technologies: ["LangChain", "FAISS", "FastAPI", "Ollama", "RAG", "Vector Search"],
+    keyFeatures: [
+      "Semantic Q&A over multiple PDFs",
+      "Dynamic context filtering and vector index rebuilding",
+      "Cross-encoder re-ranking for improved answer precision"
+    ],
+    outcome: "Boosted LLM answer precision and solved ghost context issues for enterprise document Q&A."
   },
   {
     title: "Exploring Health Disparities in the UK",
