@@ -13,16 +13,15 @@ export const projectsData: ProjectItem[] = [
     title: "Mini IDP - AI Workflow Platform",
     icon: "🤖",
     shortDescription: "Full-stack AI workflow platform for self-serve document processing with RAG chatbots and summarizers.",
-    fullDescription: "Designed and engineered a full-stack AI Workflow Platform (Mini IDP) enabling self-serve document processing through RAG chatbots, summarizers, and text classifiers. Implemented a modular microservices-inspired architecture with a FastAPI backend, React frontend, and Prefect for robust workflow orchestration. Developed comprehensive AI/ML pipelines leveraging Natural Language Processing (NLP) for intelligent query answering with citations, automated document summarization, and text classification, demonstrating end-to-end LLM integration and data flow management. Established scalable data infrastructure, including PostgreSQL database schema design for document and pipeline metadata, robust input validation, and structured error handling, ensuring platform reliability and maintainability.",
+    fullDescription: "Engineered a production-ready, full-stack AI Workflow Platform (Mini IDP) enabling enterprise users to upload CSVs, train machine learning models, and gain actionable insights in less than 30 seconds, alongside automated document processing via RAG chatbots and summarizers. Implemented a modular microservices-inspired architecture with a FastAPI backend, React frontend, and Prefect for robust workflow orchestration. Established scalable PostgreSQL data infrastructure with comprehensive validation and error handling.",
     technologies: ["FastAPI", "React", "Prefect", "PostgreSQL", "NLP", "LLM", "RAG", "Microservices", "Docker"],
     keyFeatures: [
-      "Self-serve document processing via RAG chatbots and summarizers",
-      "Modular microservices-inspired architecture",
-      "Comprehensive AI/ML pipelines for query answering, summarization, and classification",
-      "Robust workflow orchestration with Prefect",
-      "Scalable PostgreSQL data infrastructure with validation and error handling"
+      "Self-serve AI for rapid ML model training from CSV uploads, intelligent document analysis, and summarization",
+      "Modular microservices-inspired architecture ensuring scalability and reliability",
+      "High-performance RAG, NLP, & ML pipelines with end-to-end LLM integration",
+      "Robust workflow orchestration with Prefect and scalable PostgreSQL infrastructure"
     ],
-    outcome: "Enabled end-to-end document automation and intelligent analytics for enterprise users."
+    outcome: "Delivered end-to-end document automation and intelligent analytics, drastically reducing model development time from weeks to minutes, with ML models achieving 89.65% R² accuracy and sub-second training on 10K+ row datasets, and zero critical production bugs."
   },
   {
     title: "Intelligent B2B Lead Generation Platform",

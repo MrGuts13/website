@@ -78,8 +78,8 @@ export const skillsData: Record<string, SkillCategory> = {
     description: "Frontend, dashboards, and data visualization",
     skills: [
       "Streamlit (advanced)",
-      "React (intermediate)",
-      "TailwindCSS (basic)",
+      "React (advanced)",
+      "TailwindCSS (advanced)",
       "Custom JavaScript Enhancements",
       "UI State Management",
       "Dashboard Design",
