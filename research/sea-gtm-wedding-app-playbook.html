@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SEA GTM Playbooks → Wedding App Traction Plan</title>
+<style>
+  :root {
+    --ink: #1f1b16;
+    --ink-soft: #55504a;
+    --paper: #faf7f2;
+    --card: #ffffff;
+    --line: #e7e0d6;
+    --accent: #9a6b2f;
+    --accent-soft: #f3e9db;
+    --shopee: #c0512e;
+    --grab: #2e7d4f;
+    --lazada: #4a4e9e;
+    --bride: #a5527a;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: Georgia, 'Times New Roman', serif;
+    background: var(--paper);
+    color: var(--ink);
+    line-height: 1.65;
+    font-size: 17px;
+  }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 48px 24px 96px; }
+  header { border-bottom: 3px double var(--line); padding-bottom: 32px; margin-bottom: 40px; }
+  .kicker {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 12px; letter-spacing: 0.18em; text-transform: uppercase;
+    color: var(--accent); font-weight: 700; margin-bottom: 12px;
+  }
+  h1 { font-size: 34px; line-height: 1.2; font-weight: 400; margin-bottom: 14px; }
+  .subtitle { color: var(--ink-soft); font-size: 18px; font-style: italic; }
+  h2 {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 22px; font-weight: 700; margin: 56px 0 16px;
+    padding-top: 24px; border-top: 1px solid var(--line);
+  }
+  h3 { font-family: 'Helvetica Neue', Arial, sans-serif; font-size: 17px; font-weight: 700; margin: 28px 0 8px; }
+  p { margin-bottom: 14px; }
+  p.lede { font-size: 19px; }
+  .tldr {
+    background: var(--accent-soft); border-left: 4px solid var(--accent);
+    padding: 20px 24px; border-radius: 0 8px 8px 0; margin: 24px 0;
+  }
+  .tldr strong { display: block; font-family: 'Helvetica Neue', Arial, sans-serif; font-size: 13px; letter-spacing: 0.14em; text-transform: uppercase; margin-bottom: 8px; color: var(--accent); }
+  /* timeline */
+  .timeline { list-style: none; margin: 20px 0 8px; }
+  .timeline li { position: relative; padding: 0 0 20px 32px; border-left: 2px solid var(--line); margin-left: 8px; }
+  .timeline li:last-child { padding-bottom: 4px; }
+  .timeline li::before {
+    content: ''; position: absolute; left: -7px; top: 6px;
+    width: 12px; height: 12px; border-radius: 50%; background: var(--dot, var(--accent)); border: 2px solid var(--paper);
+  }
+  .timeline .yr { font-family: 'Helvetica Neue', Arial, sans-serif; font-weight: 700; font-size: 14px; display: block; color: var(--dot, var(--accent)); }
+  .co-shopee { --dot: var(--shopee); }
+  .co-grab { --dot: var(--grab); }
+  .co-lazada { --dot: var(--lazada); }
+  .co-bride { --dot: var(--bride); }
+  .lesson {
+    background: var(--card); border: 1px solid var(--line); border-radius: 8px;
+    padding: 14px 18px; margin: 16px 0 8px; font-size: 15.5px;
+  }
+  .lesson b { font-family: 'Helvetica Neue', Arial, sans-serif; font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--accent); display: block; margin-bottom: 4px; }
+  /* table */
+  .tablewrap { overflow-x: auto; margin: 20px 0; }
+  table { border-collapse: collapse; width: 100%; font-size: 15px; background: var(--card); }
+  th, td { text-align: left; padding: 12px 14px; border: 1px solid var(--line); vertical-align: top; }
+  th { font-family: 'Helvetica Neue', Arial, sans-serif; font-size: 12.5px; letter-spacing: 0.08em; text-transform: uppercase; background: var(--accent-soft); }
+  /* phases */
+  .phase {
+    background: var(--card); border: 1px solid var(--line); border-radius: 10px;
+    padding: 24px 26px; margin: 20px 0;
+  }
+  .phase h3 { margin-top: 0; }
+  .phase .tag {
+    display: inline-block; font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 11.5px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase;
+    background: var(--accent); color: #fff; border-radius: 999px; padding: 3px 12px; margin-bottom: 10px;
+  }
+  ul, ol { margin: 0 0 14px 22px; }
+  li { margin-bottom: 8px; }
+  .dont { border-left: 4px solid #b0413e; background: #fbf0ef; padding: 18px 22px; border-radius: 0 8px 8px 0; margin: 20px 0; }
+  .dont h3 { margin-top: 0; color: #8f3430; }
+  .metrics { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px; margin: 20px 0; }
+  .metric { background: var(--card); border: 1px solid var(--line); border-radius: 8px; padding: 16px 18px; font-size: 15px; }
+  .metric b { font-family: 'Helvetica Neue', Arial, sans-serif; display: block; font-size: 14.5px; margin-bottom: 4px; }
+  .sources { font-size: 14.5px; color: var(--ink-soft); }
+  .sources a { color: var(--accent); }
+  footer { margin-top: 64px; padding-top: 20px; border-top: 3px double var(--line); font-size: 13.5px; color: var(--ink-soft); font-style: italic; }
+  @media (max-width: 600px) { h1 { font-size: 27px; } body { font-size: 16px; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <div class="kicker">Go-to-Market Research · Southeast Asia · July 2026</div>
+  <h1>What Shopee, Grab &amp; Lazada Did in Year One — and How to Apply It to a Wedding Marketplace</h1>
+  <p class="subtitle">Chronological GTM analysis of SEA's three biggest marketplace wins, distilled into a traction playbook for a two-sided wedding app struggling on both the vendor and couple side.</p>
+</header>
+
+<div class="tldr">
+  <strong>TL;DR</strong>
+  <p>Your problem is not a marketing problem — it's a <em>cold-start liquidity</em> problem, and all three giants solved the exact same problem the same way: <b>(1)</b> they picked the harder side of the marketplace (supply) and acquired it manually, face-to-face, doing things that don't scale; <b>(2)</b> they constrained scope brutally — one city, one use case — until the market was liquid; <b>(3)</b> they subsidized early transactions instead of monetizing them (zero commission, free shipping, cheap smartphones); <b>(4)</b> they built trust infrastructure the local market actually needed (cash-on-delivery, escrow); and <b>(5)</b> they hyper-localized everything. For your wedding app: recruit 50–100 great vendors by hand in one city, give them free everything plus white-glove onboarding, manufacture the first bookings yourself concierge-style, and only then pour fuel on demand.</p>
+</div>
+
+<h2>1 · Grab (MyTeksi): win the hard side by hand, city by city</h2>
+<p>Grab is the purest lesson for you, because drivers in 2012 were exactly what wedding vendors are for you today: fragmented, offline, skeptical small operators who don't trust apps.</p>
+<ul class="timeline co-grab">
+  <li><span class="yr">2011–2012</span>Anthony Tan and Tan Hooi Ling start with a $25,000 Harvard business-plan prize. The MVP is narrow: GPS tracking and fare estimates for taxis in Kuala Lumpur — one city, one vehicle type, one problem (safety/trust).</li>
+  <li><span class="yr">June 2012</span>MyTeksi launches in KL. Driver acquisition is entirely manual: the founders spend months physically at taxi stands, airports, petrol stations and coffee shops pitching drivers one by one. Many drivers don't own smartphones — so Grab buys phones in bulk and resells them on installment plans, subsidizing the supply side's ability to even participate.</li>
+  <li><span class="yr">2013–2014</span>Expansion is strictly city-by-city (Manila, Singapore, Bangkok, Ho Chi Minh City), repeating the same ground game each time. In HCMC, Tan learns drivers gather at gas stations at 4am for coffee before shifts — so he shows up at 4am with free coffee. Localization over standardization: cash payments built in from day one (most of SEA was unbanked), GrabBike launched 2014 because motorbikes, not cars, are how the region moves.</li>
+  <li><span class="yr">2015</span>200,000+ drivers, 11M+ downloads, Southeast Asia's first unicorn. Uber — running a global template with card-only payments and cars-only supply — never catches up and sells its SEA business to Grab in 2018.</li>
+</ul>
+<div class="lesson"><b>Transferable lesson</b>Supply is won offline, in person, at the places suppliers already gather — and you remove every barrier (hardware, skills, cost) stopping them from participating. Density in one city beats presence in five.</div>
+
+<h2>2 · Lazada: manufacture trust before you build the marketplace</h2>
+<ul class="timeline co-lazada">
+  <li><span class="yr">March 2012</span>Founded by Maximilian Bittner with Rocket Internet backing, launching across Indonesia, Malaysia, the Philippines, Thailand and Vietnam. Crucially, it does <em>not</em> start as a marketplace: it starts as an "online department store" holding its own inventory — because in 2012 SEA, nobody trusted online sellers, so Lazada made itself the seller.</li>
+  <li><span class="yr">2012–2013</span>It builds its own last-mile logistics and pioneers <b>cash-on-delivery</b> — customers pay only when the product is physically in their hands. This single trust mechanic unlocks a market where credit-card penetration was tiny and skepticism was huge.</li>
+  <li><span class="yr">2013</span>Only once consumers trust the Lazada brand does it pivot: third-party sellers are invited onto the now-credible platform, exploding selection without Lazada holding inventory.</li>
+  <li><span class="yr">2015–2016</span>GMV passes US$1B within three years of launch; Alibaba buys control for $1B in 2016.</li>
+</ul>
+<div class="lesson"><b>Transferable lesson</b>In high-stakes, low-trust categories (and nothing is higher-stakes than someone's wedding), the platform must absorb the risk first. Guarantees, escrow, curation and "we vouch for this vendor" come <em>before</em> open-marketplace scale.</div>
+
+<h2>3 · Shopee: subsidize both sides, educate sellers, gamify demand</h2>
+<ul class="timeline co-shopee">
+  <li><span class="yr">Feb 2015</span>Launches from Singapore as mobile-first C2C, entering seven markets — but each market gets its own localized app, team, campaigns and product mix (e.g. a dedicated Islamic-products section in Indonesia).</li>
+  <li><span class="yr">2015–2016</span>Cold start solved with pure subsidy: <b>zero seller commission</b> and <b>subsidized/free shipping</b> even where delivery was expensive, funded by Garena's gaming profits. Initial supply gaps are filled with cross-border wholesale merchants so the shelves never look empty while local sellers ramp.</li>
+  <li><span class="yr">2016</span>Launches <b>Shopee University</b> — free structured training that turns offline mom-and-pop sellers into competent online merchants. Seller success becomes a product, not an accident.</li>
+  <li><span class="yr">2017–2019</span>Demand side is gamified and event-driven: Shopee Shake, coins, in-app games, and tentpole mega-campaigns (9.9, 11.11, 12.12) that concentrate demand into spikes; local KOLs in every market, then regional ambassadors (Blackpink, 2018). Overtakes first-mover Lazada across most of SEA.</li>
+</ul>
+<div class="lesson"><b>Transferable lesson</b>Don't monetize the side you need most — pay it to show up, then train it to succeed. On the demand side, engagement mechanics and concentrated "moments" beat always-on ads.</div>
+
+<h2>4 · The closest comp: Bridestory (Indonesia)</h2>
+<ul class="timeline co-bride">
+  <li><span class="yr">2014</span>Founded in Jakarta as a curated wedding marketplace connecting couples with photographers, venues, planners and other vendors — essentially applying the SEA marketplace playbook to your exact vertical.</li>
+  <li><span class="yr">2014–2019</span>Grows to <b>20,000+ curated vendors</b> serving <b>3.5M+ brides</b>, notably without raising beyond its 2015 Series A — wedding marketplaces can grow capital-efficiently because content (real weddings, portfolios) is the acquisition engine, and vendors bring their own audiences when their work is showcased.</li>
+  <li><span class="yr">June 2019</span>Acquired by Tokopedia for a reported ~US$50M to anchor its wedding "super ecosystem" — proof there's a real exit path in SEA weddings.</li>
+</ul>
+<div class="lesson"><b>Transferable lesson</b>In weddings specifically, vendor portfolios ARE the content and the content IS the demand acquisition. Every real wedding published tags 5–10 vendors who all reshare it — a built-in distribution loop Shopee had to pay Blackpink for.</div>
+
+<h2>5 · The pattern: seven principles they all shared</h2>
+<div class="tablewrap">
+<table>
+  <thead><tr><th>Principle</th><th>How they did it</th><th>Your wedding-app version</th></tr></thead>
+  <tbody>
+    <tr><td><b>Constrain until liquid</b></td><td>Grab: one city (KL), taxis only. Shopee: country-specific apps.</td><td>ONE city (or even one district's wedding scene), 2–3 vendor categories. Kill everything else until this market is liquid.</td></tr>
+    <tr><td><b>Win the hard side by hand</b></td><td>Grab founders at taxi stands at 4am with coffee.</td><td>Founders personally at wedding expos, bridal bazaars, vendor Instagram DMs. Target 50–100 hand-picked vendors, face to face.</td></tr>
+    <tr><td><b>Subsidize, don't monetize</b></td><td>Shopee: 0% commission + free shipping. Grab: phones on installment.</td><td>Free listings, 0% commission for 12–18 months, free professional photos/videos of vendor storefronts. You even build their profile FOR them.</td></tr>
+    <tr><td><b>Manufacture trust</b></td><td>Lazada: COD + own logistics. Shopee: escrow guarantee.</td><td>Verified-vendor badges, deposit protection/escrow, money-back guarantee, dispute mediation. The app takes the risk the couple currently carries alone.</td></tr>
+    <tr><td><b>Educate supply</b></td><td>Shopee University (2016).</td><td>"Vendor Academy": free workshops on pricing, responding to leads fast, shooting portfolio content. A trained vendor closes leads; a closing vendor stays.</td></tr>
+    <tr><td><b>Hyperlocalize</b></td><td>GrabBike, cash payments, Islamic product sections.</td><td>Local wedding customs are the product: Malay, Chinese, Indian, Muslim-compliant vendors and packages as first-class filters, local languages, local price norms, installment payments.</td></tr>
+    <tr><td><b>Concentrate demand into moments</b></td><td>Shopee 9.9/11.11 campaigns, gamification, KOLs.</td><td>Seasonal campaigns around peak engagement/wedding months, a flagship online "wedding fair" with app-exclusive vendor deals, micro-KOL brides documenting planning journeys.</td></tr>
+  </tbody>
+</table>
+</div>
+
+<h2>6 · The playbook: what to actually do</h2>
+
+<div class="phase">
+  <span class="tag">Phase 0 · Weeks 1–4 — Shrink the problem</span>
+  <h3>Pick your atomic network</h3>
+  <ul>
+    <li><b>One city, 2–3 categories.</b> Choose the categories couples search <em>first</em> and most often — typically photographers/videographers, makeup artists, and venues/caterers. These are your "taxis in KL."</li>
+    <li><b>Define liquidity before growth:</b> the goal of the next 6 months is "a couple in this city can post a request and get 3+ quality vendor responses within 24 hours" — not downloads, not signups.</li>
+    <li><b>Audit your current listings honestly.</b> Dead profiles, no photos, no response = worse than empty. Cull or rebuild them; a small curated catalog beats a large stale one (Lazada's lesson: you are the guarantor now).</li>
+  </ul>
+</div>
+
+<div class="phase">
+  <span class="tag">Phase 1 · Months 1–3 — Win vendors the Grab way</span>
+  <h3>50–100 hand-recruited, white-glove vendors</h3>
+  <ul>
+    <li><b>Go where vendors already gather:</b> wedding expos, bridal fairs, vendor WhatsApp/Facebook groups, and directly into the DMs of vendors already marketing on Instagram/TikTok (they've proven they want leads).</li>
+    <li><b>Remove all friction — do the work for them.</b> Grab bought drivers phones; you build the vendor's entire profile: pull their Instagram portfolio, write their copy, structure their packages. Onboarding = one yes, zero effort.</li>
+    <li><b>The offer:</b> 0% commission, free premium placement for founding vendors, a "Founding Vendor" badge, and a promise of X qualified leads in 90 days. Exclusivity framing ("we're only taking 20 photographers in this city") makes curation a feature, not a weakness.</li>
+    <li><b>Anchor with 3–5 marquee vendors.</b> One respected venue or celebrity-adjacent photographer signals credibility to the rest (Grab's local-partner lesson). Overpay in effort or incentives to land them.</li>
+  </ul>
+</div>
+
+<div class="phase">
+  <span class="tag">Phase 2 · Months 2–5 — Manufacture the first transactions</span>
+  <h3>Concierge demand + trust infrastructure</h3>
+  <ul>
+    <li><b>Run a concierge service, not just an app.</b> Lazada held inventory before opening a marketplace; you personally match the first 50–100 couples to vendors — a free "wedding concierge" via WhatsApp that happens to use your app as the catalog. Every matched booking = a review, a real-wedding story, and a vendor who now believes.</li>
+    <li><b>Ship the trust layer:</b> verified vendors (you've met each one), deposit protection or milestone-escrow payments, visible response-time stats, and a mediation promise. In weddings the #1 fear is vendor no-show/quality — the platform that absorbs this fear wins the category.</li>
+    <li><b>Guarantee vendor responsiveness.</b> A couple who gets silence churns forever. Chase vendor replies manually behind the scenes; if a vendor is slow, you respond on their behalf. Fill rate is sacred.</li>
+  </ul>
+</div>
+
+<div class="phase">
+  <span class="tag">Phase 3 · Months 3–8 — Turn weddings into content (demand engine)</span>
+  <h3>The Bridestory loop + Shopee moments</h3>
+  <ul>
+    <li><b>Publish every real wedding</b> booked through the platform as rich content (photos, budget breakdown, vendor list). Each post tags all vendors — they reshare to their audiences, which recruits both couples AND envious competing vendors. This is your organic loop; feed it weekly.</li>
+    <li><b>Micro-KOL brides:</b> partner with 5–10 engaged couples per quarter to document their planning journey using the app (TikTok/IG Reels). Planning content massively outperforms ads in this category, and it's near-free.</li>
+    <li><b>Create tentpole moments:</b> a quarterly online wedding fair with app-exclusive founding-vendor deals, timed to local peak engagement seasons — Shopee's 11.11 logic applied to weddings. Concentrated urgency beats trickle marketing.</li>
+    <li><b>Light gamification with real utility:</b> checklist/budget tools that unlock vendor vouchers as couples complete planning milestones — engagement between the (infrequent) booking events, and a reason to open the app weekly.</li>
+  </ul>
+</div>
+
+<div class="phase">
+  <span class="tag">Phase 4 · Months 6–12+ — Educate, measure, then expand</span>
+  <h3>Vendor Academy → second city</h3>
+  <ul>
+    <li><b>Launch a "Vendor Academy"</b> (Shopee University): free monthly sessions on lead conversion, pricing, portfolio content. Publish a vendor leaderboard — response time and booking rate — and let performance earn free premium placement.</li>
+    <li><b>Only expand when city #1 is liquid</b> (see metrics below). Then replicate the identical ground game in city #2 with a local hire — Grab never skipped the taxi-stand phase in a new city, and neither should you.</li>
+    <li><b>Monetize late and gently:</b> once vendors are getting bookings they'd hate to lose, introduce The Knot–style tiers — keep a genuinely useful free storefront, charge for placement/lead volume, ideally hybrid (low base + pay-per-performance) so pricing tracks the value they demonstrably receive.</li>
+  </ul>
+</div>
+
+<h2>7 · Metrics that matter (in order)</h2>
+<div class="metrics">
+  <div class="metric"><b>1 · Vendor response rate &amp; speed</b>% of couple inquiries answered within 24h. This is your single most important number — it IS the product experience.</div>
+  <div class="metric"><b>2 · Match rate</b>% of couple requests that get ≥3 relevant vendor responses. Below ~80% in your focus categories, do not spend a cent on demand marketing.</div>
+  <div class="metric"><b>3 · Inquiry → booking conversion</b>Proves the marketplace creates real transactions, not window shopping. Track per category.</div>
+  <div class="metric"><b>4 · Vendor 90-day retention</b>% of founding vendors still active (responding, updating) after 90 days. Churned supply silently kills you.</div>
+  <div class="metric"><b>5 · Content loop coefficient</b>Couples/vendors acquired per published real wedding. When this is reliably &gt;0, you've found your Shopee-coins equivalent.</div>
+  <div class="metric"><b>6 · Bookings per vendor per quarter</b>The number that determines whether vendors will eventually pay you. Monetize only when it hurts to leave.</div>
+</div>
+
+<div class="dont">
+  <h3>What the history says NOT to do</h3>
+  <ul>
+    <li><b>Don't grow both sides with ads simultaneously.</b> None of the three did. Supply first, by hand; demand second, via content and moments.</li>
+    <li><b>Don't charge vendors yet.</b> Shopee ran 0% commission for years while unprofitable competitors charged. Early monetization of thin supply is how marketplaces die.</li>
+    <li><b>Don't be everywhere.</b> A directory covering 5 cities thinly loses to a marketplace owning 1 city completely. Uber's broad global template lost to Grab's deep local one.</li>
+    <li><b>Don't copy The Knot's model wholesale.</b> Its subscription-first vendor monetization works atop 60M visits of demand. In SEA, trust mechanics (escrow, verification, mediation) and localization (customs, languages, installments) are the wedge — monetization comes after liquidity.</li>
+    <li><b>Don't confuse app installs with traction.</b> Weddings are low-frequency; your north star is completed bookings and vendor response health, not DAU.</li>
+  </ul>
+</div>
+
+<h2>Sources</h2>
+<ul class="sources">
+  <li><a href="https://en.wikipedia.org/wiki/Shopee">Shopee — Wikipedia</a> · <a href="https://punchcardinvestor.substack.com/p/sea-ltd-part-2-shopee-the-everything">Punchcard Investor: Sea Ltd Part 2 — Shopee</a> · <a href="https://www.latterly.org/shopee-marketing-strategy/">Latterly: Shopee Marketing Strategy</a> · <a href="https://steadycompounding.com/investing/what-you-need-to-know-about-sea-limited-shopees-secret-playbook/">Steady Compounding: Shopee's Secret Playbook</a> · <a href="https://apacmarketers.com/shopee-red-ocean/">APAC Marketers: How Shopee Competes in a Red Ocean</a> · <a href="https://cube.asia/growth-and-profitability-for-shopee-are-they-mutually-exclusive/">Cube Asia: Shopee growth &amp; profitability</a></li>
+  <li><a href="https://thebrandhopper.com/featured-startups/grab-superapp-business-model-funding-revenue/">The Brand Hopper: Grab Superapp</a> · <a href="https://dcf-model.com/blogs/history/grab">Grab Holdings history</a> · <a href="https://exnihilomagazine.com/grab-vs-uber-southeast-asia/">Ex Nihilo: How Grab Forced Uber Out of SEA</a> · <a href="https://www.rapyd.net/blog/how-localization-helped-grab-beat-uber-in-southeast-asia/">Rapyd: How Localization Helped Grab Beat Uber</a> · <a href="https://overtheanthill.substack.com/p/how-grab-beat-uber">Over the Anthill: How Grab beat Uber</a></li>
+  <li><a href="https://productmint.com/the-lazada-business-model-how-does-lazada-make-money/">ProductMint: Lazada Business Model</a> · <a href="https://businessmodelanalyst.com/lazada-business-model/">Business Model Analyst: Lazada</a> · <a href="https://ordazzle.com/blogs/lazada-group-revolutionizing-ecommerce-solutions">Ordazzle: How Lazada Revolutionized SEA e-Commerce</a></li>
+  <li><a href="https://kr-asia.com/tokopedia-acquires-indonesian-wedding-marketplace-bridestory">KrASIA: Tokopedia acquires Bridestory</a> · <a href="https://www.dealstreetasia.com/stories/tokopedia-bridestory-140762">DealStreetAsia: Tokopedia–Bridestory</a></li>
+  <li><a href="https://www.reforge.com/guides/beat-the-cold-start-problem-in-a-marketplace">Reforge: Beat the cold start problem</a> · <a href="https://ihaveulcers.com/the-cold-start-problem-takeaways/">The Cold Start Problem (Andrew Chen) — takeaways</a> · <a href="https://www.davidciccarelli.com/articles/product-marketing-playbook-for-two-sided-platforms/">Ciccarelli: Marketplace cold-start playbook</a></li>
+  <li><a href="https://businessmodelcanvastemplate.com/blogs/how-it-works/weddingwire-how-it-works">WeddingWire business model</a> · <a href="https://www.theknotww.com/press-releases/the-knot-worldwide-announces-new-platform-features-to-drive-wedding-vendor-success">The Knot Worldwide: vendor platform features</a></li>
+</ul>
+
+<footer>Research compiled July 2026 from public sources. Figures (driver counts, GMV, valuations) are as reported in the cited coverage and should be treated as approximate.</footer>
+
+</div>
+</body>
+</html>
